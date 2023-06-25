@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>jann.dev</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <style>
 h1 {
   color: white;
@@ -101,19 +102,13 @@ h1 {
   <a href="mailto:hi@mangosaftlama.de" class="finch">E-Mail</a>
 </div>
 <script>
-function sleep(time)
-{
-    return(new Promise(function(resolve, reject) {
-        setTimeout(function() { resolve(); }, time);
-    }));
-}
 var madeWith = ["CLI Tools", "GUI Tools", "Pixel Art", "Video Games"];
 var counter = 0;
 var elem = $("#madewith");
 var i = 0;
 var textStep = "";
 
-setInterval(change, 2800);
+setInterval(change, 2000);
 
 function change() {
   elem.fadeOut(function() {
